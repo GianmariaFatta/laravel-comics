@@ -1,0 +1,127 @@
+@import 'mixins' ;
+@import 'variables' ;
+
+* {
+    color: #FFF
+}
+
+main {
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row-button {
+    @include center-flex;
+
+    button {
+        margin-top: 80px;
+        width: 140px;
+        height: 30px;
+        background-color: dodgerblue;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
+
+#comics {
+    overflow: hidden;
+    padding: 30px;
+    height: 60%;
+}
+
+
+section {
+    @include center-flex;
+    background-color: dodgerblue;
+    height: 150px;
+    width: 100%;
+    color: white;
+
+    ul {
+        @include center-flex;
+        gap: 100px
+    }
+}
+
+.row {
+    width: 100%;
+    height: 400px;
+    @include center-flex;
+}
+
+.col-left li a {
+    font-size: 10px;
+    color: $light-grey;
+}
+
+#contents {
+    width: 100%;
+    min-height: 500px;
+    font-size: 25px;
+    background-color: #242424;
+    padding: 20px 0;
+}
+
+.comic-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-left {
+    width: 50%;
+    height: 380px;
+    /* border: 2px dashed blue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.s-column li a,
+.m-column li a,
+.e-column li a {
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 3px;
+
+}
+
+
+.col-right {
+    width: 50%;
+    /* border: 2px dashed blue; */
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -280px;
+        right: 100px;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+.s-column,
+.m-column,
+.e-column {
+    width: 30%;
+    height: 100%;
+}
+
+h3 {
+    margin: 15px 0
+}
+
+/* HOVER */
+.s-column li a:hover,
+.m-column li a:hover,
+.e-column li a:hover {
+    color: dodgerblue
+}
+
+.comic-card:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+
+}
