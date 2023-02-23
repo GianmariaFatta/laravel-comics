@@ -10,6 +10,7 @@
 </head>
 <body>
 @include('header')
+@include('jumbo')
 {{-- <header>
         <div class="container">
             <div class="row">
