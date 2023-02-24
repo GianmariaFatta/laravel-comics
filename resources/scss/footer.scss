@@ -9,7 +9,7 @@ footer {
     z-index: 1;
 }
 
-.row {
+.row-footer {
     display: flex;
     width: 1200px;
 }
@@ -24,7 +24,7 @@ footer {
     width: 100%;
 }
 
-button {
+footer button {
     height: 50px;
     width: 150px;
     border: 3px solid dodgerblue;
@@ -44,7 +44,7 @@ button {
     gap: 20px;
 }
 
-h3 {
+footer h3 {
     color: dodgerblue;
 }
 

@@ -9,19 +9,23 @@
 <body>
     <header>
         <div class="container">
-            <div class="row">
+            <div class="row-header">
                 <div class="col-left">
-                    <div class="card">
+                    <div class="card-header">
                         <a href=""><img src="{{ asset('img/dc-logo.png')}}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-right">
                     <ul>
-                       <li>ciao</li>
+                    @foreach ( $pages as $page )
+                       <li>{{ $page}}</li>
+                    @endforeach
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+@include('jumbo')
+
 </body>
 </html>

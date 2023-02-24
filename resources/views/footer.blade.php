@@ -10,7 +10,7 @@
      <footer>
         <div class="container">
 
-            <div class="row">
+            <div class="row-footer">
                 <div class="s-footer">
                     <button>
                         <a href="">SIGN-UP NOW!</a>

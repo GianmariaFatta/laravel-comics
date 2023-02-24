@@ -8,12 +8,14 @@ header {
 .col-left {
     @include left_flex;
     width: 40%;
+    height: 100%;
+
     // border: 2px dashed darkblue
 }
 
 .col-right {
     width: 60%;
-    height: auto;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,16 +26,25 @@ header {
         list-style-type: none;
         cursor: pointer;
         gap: 30px;
+        li {
+            
+        padding: 33px 3px;
+        font-size: 18px;
+        font-weight: bold;
+        color:black
+}
     }
 }
 
 
-.row {
+.row-header {
     @include center-flex;
     width: 100%;
+    height: 100px;
+    
 }
 
-.card {
+.card-header {
     @include center-flex;
     width: 80px;
     margin: 10px;
@@ -48,4 +59,5 @@ li {
     padding: 33px 3px;
     font-size: 18px;
     font-weight: bold;
+    color:black
 }
