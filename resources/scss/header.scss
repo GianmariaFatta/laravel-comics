@@ -13,7 +13,7 @@ header {
     // border: 2px dashed darkblue
 }
 
-.col-right {
+.row-header .col-right {
     width: 60%;
     height: 50px;
     display: flex;
@@ -55,9 +55,9 @@ header {
     border-bottom: 5px solid dodgerblue;
 }
 
-li {
-    padding: 33px 3px;
-    font-size: 18px;
-    font-weight: bold;
-    color:black
-}
+// li {
+//     padding: 33px 3px;
+//     font-size: 18px;
+//     font-weight: bold;
+//     color:black
+// }

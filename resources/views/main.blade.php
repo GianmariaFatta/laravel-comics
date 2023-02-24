@@ -2,10 +2,18 @@
         <div id="contents">
             <div class="container">
                 <div class="comic-row">
+                @foreach ($comics as $comic )
                     
+                        <div class="comic-card">
+        <div class="card">
+            <img src="https://wallpapercave.com/wp/wp5386641.jpg">
+        </div>
+        <h6>{{$comic['title']}}</h6>
+    </div>
+                @endforeach
                 </div>
             </div>
-            <div class="row-button">
+            <div class="row-button-main">
                 <button><a href=""> LOAD MORE</a></button>
             </div>
         </div>
@@ -18,11 +26,11 @@
                 <li><a href="">DC POWER VISA</a> </li>
             </ul>
         </section>
-        <div id="comics">
+        <div id="comics-main">
             <div class="container">
-                <div class="row">
-                    <div class="col-left">
-                        <div class="s-column">
+                <div class="row-main">
+                    <div class="col-left-main">
+                        <div class="s-column-main">
                             <h3>DC COMICS</h3>
                             <ul>
                             @foreach ($comicsLinks as $comicsLink )
@@ -31,27 +39,32 @@
                             </ul>
                             <h3>SHOP</h3>
                             <ul>
-                                <li>ciao</li>
+                                  @foreach ($shopLinks as $shopLink )
+                                <li>{{$shopLink}}</li>
+                            @endforeach
 
                             </ul>
                         </div>
-                        <div class="m-column">
+                        <div class="m-column-main">
                             <h3>DC </h3>
                             <ul>
-                                <li>ciao</li>
-
+                           @foreach ($dcLinks as $dcLink )
+                                <li>{{$dcLink}}</li>
+                            @endforeach
                             </ul>
                         </div>
-                        <div class="e-column">
+                        <div class="e-column-main">
                             <h3>SITES</h3>
                             <ul>
-                               <li>ciao</li>
+                             @foreach ($sitesLinks as $sitesLink )
+                                <li>{{$sitesLink}}</li>
+                            @endforeach
 
                             </ul>
                         </div>
                     </div>
-                    <div class="col-right">
-                        <div class="card">
+                    <div class="col-right-main">
+                        <div class="card-main">
                             <img src="{{asset('img/dc-logo-bg.png')}}" alt="">
                         </div>
                     </div>
