@@ -17,9 +17,17 @@
                 </div>
                 <div class="col-right">
                     <ul>
-                    @foreach ( $pages as $page )
-                       <li>{{ $page}}</li>
-                    @endforeach
+                      <a href="{{route('characters')}}"><li>CHARACTERS</li></a> 
+                      <a href="{{route('home')}}"><li>COMICS</li></a> 
+                      <a href="#"><li>MOVIES</li></a> 
+                      <a href="#"><li>TV</li></a> 
+                      <a href="#"><li>GAMES</li></a> 
+                      <a href="#"><li>COLLECTIBLES</li></a> 
+                      <a href="#"><li>VIDEOS</li></a> 
+                      <a href="#"><li>FANS</li></a> 
+                      <a href="#"><li>NEWS</li></a> 
+                      <a href="#"><li>SHOP</li></a> 
+                    
                     </ul>
                 </div>
             </div>

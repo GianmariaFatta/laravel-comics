@@ -137,8 +137,10 @@ h3 {
 /* HOVER */
 .s-column-main ul li:hover,
 .m-column-main ul li:hover,
-.e-column-main ul li :hover {
-    color: dodgerblue
+.e-column-main ul li:hover {
+    color: dodgerblue;
+    cursor: pointer;
+    
 }
 
 .comic-card:hover {

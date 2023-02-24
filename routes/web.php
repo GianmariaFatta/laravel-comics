@@ -15,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $pages = ['CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS','SHOP'];
-    
+  
     $comicsLinks =["Characters", "Comics", "Movies", "TV", "Games", "Collectibles", "Videos", "Fans", "News"];
 
     $shopLinks = ["Shop DC", "Shop Dc Collectibles"];
@@ -27,6 +26,12 @@ Route::get('/', function () {
 
     $comics = config('comics');
 
-    return view('home', ['pages' => $pages, 'comicsLinks' => $comicsLinks, 'shopLinks' => $shopLinks, 'dcLinks' => $dcLinks, 'sitesLinks' => $sitesLinks, 'comics'=> $comics]);
+    return view('home', [ 'comicsLinks' => $comicsLinks, 'shopLinks' => $shopLinks, 'dcLinks' => $dcLinks, 'sitesLinks' => $sitesLinks, 'comics'=> $comics]);
 
 })->name('home');
+
+Route::get('/characters', function () {
+
+    return view('characters');
+
+})->name('characters');
